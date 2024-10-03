@@ -1,0 +1,1153 @@
+@font-face {
+    font-family: zainu;
+    src: url(/fonts/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: zainu;
+    font-weight: 100;
+    src: url(/fonts/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: zainu;
+    font-weight: 200;
+    src: url(/fonts/NeueHaasDisplayRoman.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "zainu";
+    
+}
+*::selection{
+    color: white;
+    background-color: #000;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+
+/* .loader */
+.spinner {
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 1em;
+    color: #f5f5f5;
+    filter: drop-shadow(0 0 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 1.3s;
+   }
+   
+   .spinner span {
+    animation: loading6454 1.75s ease infinite;
+   }
+   
+   .spinner span:nth-child(2) {
+    animation-delay: 0.25s;
+   }
+   
+   .spinner span:nth-child(3) {
+    animation-delay: 0.5s;
+   }
+   
+   .spinner span:nth-child(4) {
+    animation-delay: 0.75s;
+   }
+   
+   .spinner span:nth-child(5) {
+    animation-delay: 1s;
+   }
+   
+   .spinner span:nth-child(6) {
+    animation-delay: 1.25s;
+   }
+   
+   .spinner span:nth-child(7) {
+    animation-delay: 1.5s;
+   }
+   
+   @keyframes loading6454 {
+    0%, 100% {
+     transform: translateY(0);
+    }
+   
+    50% {
+     transform: translateY(-10px);
+    }
+   }
+  /* .loader */
+.main{
+/* background-color: #353535; */
+position: relative;
+z-index: 99;
+
+}
+.page1{
+    width: 100vw;
+    height: 90vh;
+    background-color:#EFEAE3;
+    padding: 0vw 5vw;
+    position: relative;
+    
+    
+}
+.nav-main{
+    z-index: 1;
+   
+}
+.nav-icon{
+    font-family: "zainu";
+    font-weight: 200;
+    font-size: 1vw;
+}
+.nav-icon-color{
+    color: #f1512d;
+    font-family: "zainu";
+    font-weight: 300;
+}
+li {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    /* padding: 29px 10px 29px 10px; */
+    color: #07294d;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#active {
+    color: #ff8214;
+    /* padding: 29px 10px; */
+    font-family: "zainu";
+    font-weight: 400;
+}
+
+#acommon {
+    color: #353535;
+    /* padding: 29px 10px; */
+    transition: ease-in-out 0.2s;
+    font-family: "zainu";
+    font-weight: 400;
+
+}
+#acommon:hover{
+    color: #f1512d;
+    
+
+}
+.container{
+    height: 50vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vw 1vw;
+    position: relative;
+   
+    
+}
+.right{
+   width: 100%;
+}
+.upper h3 {
+    font-size: 3vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+
+}
+.upper h1{
+    display: inline-block;
+    font-size: 5vw;
+    font-weight: 200;
+    text-transform: uppercase;
+    color:#FF8214;
+    text-align: left;
+    border-bottom:1px solid rgba(0, 0, 0, 0.723) ;
+    padding-bottom: 2vw;
+
+}
+.right .bottom p{
+    padding-top: 2vw;
+    font-size: 1.5vw;
+
+}
+.left{
+    width: 100%;
+    
+    
+}
+.left img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page2{
+    width: 100vw;
+    height: 130vh;
+    background-color:#EFEAE3;
+    padding: 0vw 5vw;
+    
+}
+.form-container{
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    padding: 6vw 8vw;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+    position: relative;
+    
+   
+    
+}
+.form-container .left-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+}
+
+.left-text-top h2 {
+    color: white;
+    font-size: 4vw;
+    font-family: "zainu";
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 1vw;
+
+}
+.left-text-top h3{
+    color: #FF8214;
+    display: inline-block;
+    font-size: 4vw;
+    font-family: "zainu";
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 3vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+
+
+}
+.left-text-bottom{
+    padding-top: 3vw;
+   
+}
+.left-text-bottom h3{
+    padding-top: 2.5vw;
+    font-weight: 100;
+    color: white;
+    font-size: 1.5vw;
+    
+}
+.emails{
+    padding-top: 2vw;
+    color: white;
+    font-weight: 100;
+}
+.emails .first{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 0.4vw;
+}
+
+
+.emails .first .ion a{
+   
+    color: #ee7206;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-size: 1vw;
+    line-height: 1vw;
+}
+.emails p{
+    margin: 0;
+    line-height: 0.5vw;
+   
+}
+.ion-icons{
+    /* height: 10vw;     */
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ion-icons a{
+    color: white;
+    font-size: 1.7vw;
+    transition: 0.3s ease-in-out;
+}
+.ion-icons a:hover{
+    color:#FF8214 ;
+    
+}
+.form-container .right-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+   
+
+}
+.form-container .right-form form .input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom:1px solid #858895;
+    margin: 1vw;
+    padding: 0.5vw;
+    outline: none;
+   
+
+}
+#options{
+    background-color:black;
+    color:rgba(255, 255, 255, 0.827);
+    font-weight: 100;
+
+    
+}
+.button{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top: 1vw;
+}
+#submit-btn{
+    font-family: "Inter", Sans-serif;
+    padding: 0.7vw 2vw;
+    background-color: white;
+    color: #000;
+
+}
+.back-to-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0.5vw;
+}
+.back-to-top .icon{
+    font-size: 1.3vw;
+    cursor: pointer;
+
+}
+
+.back-to-top h3{
+    text-transform: uppercase;
+    font-family: "zainu";
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin: 0;
+    cursor: pointer;
+}
+.page3{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    padding: 1vw 2vw;
+    /* z-index: 9; */
+}
+
+.animation-circle{
+    position: relative;
+    z-index: 9;
+}
+#shape1{
+    width: 170vw;
+    height: 70vh;
+    background-color: #FE3B0D;
+    /* border-radius: 30%; */
+    position: absolute;
+    left: 0;
+    top: -15vw;
+    bottom: auto;
+    right: auto;
+    animation-name: last-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 10;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(40.1246deg) skew(0deg, 0deg);
+    filter: blur(40px);
+}
+#shape2{
+    width: 170vw;
+    height: 70vh;
+    background-color: #FE3B0D;
+    /* border-radius: 30%; */
+    position: absolute;
+    left: 0;
+    top: -3vw;
+    bottom: auto;
+    right: 0;
+    animation-name: last-animation2;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 10;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(40.1246deg) skew(0deg, 0deg);
+    filter: blur(40px);
+}
+#shape3{
+    width: 170vw;
+    height: 70vh;
+    background-color: #FE3B0D;
+    /* border-radius: 30%; */
+    position: absolute;
+    left: -10vw;
+    top: -20vw;
+    bottom: auto;
+    right: 0;
+    animation-name: last-animation3;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 10;  
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-16.3034deg) skew(0deg, 0deg);
+    
+    filter: blur(40px);
+}
+@keyframes last-animation{
+    from{
+        transform: translate(-15%,-10%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+}
+@keyframes last-animation2{
+    from{
+        transform: translate(3%,-10%);
+    }
+    to{
+        /* transform: translate(-10%,-0%); */
+    }
+    
+}
+@keyframes last-animation3{
+    from{
+        transform: translate(3%,-10%);
+    }
+    to{
+        /* transform: translate(-10%,-0%); */
+    }
+}
+
+.footer-div{
+    height: 40vh;
+    width: 100%;
+    /* background-color: #FF9831; */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1vw 4vw;
+    z-index: 9;
+}
+
+.footer-div .left h5{
+    font-size: 2vw;
+    font-family: "zainu";
+}
+
+.footer-div .right{
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 3vw;
+    grid-row-gap: 2vw;
+
+
+}
+.footer-div .right p{
+    font-size: 1.3vw;
+    padding-right: 5vw;
+    font-weight: 200;
+    font-family: "zainu";
+}
+.footer-div .right .inputs{
+    width: 100%;
+    
+    
+}
+.footer-div .right .inputs form{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.362);
+
+}
+
+.footer-div .right .email-input{
+    width: 100%;
+    height: 38px;
+    border: 1px #000;
+    color:rgba(255, 255, 255, 0.362);
+    background-color:transparent;
+    font-family: "zainu";
+    font-size: 1vw;
+    font-weight: 100;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    outline: none;
+    padding: 14px 0;
+    
+    
+    
+    
+}
+.submit-button{
+     width: 2vw;
+     height: 3vw;
+    color:transparent;
+    background-color: transparent;
+    background-image: url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c5_Form%20Button.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;  
+   border: none;
+   padding: 9px 15px;
+   border-bottom: 1px white;
+   
+   
+   
+}
+
+
+.footer h1 {
+    font-size: 14vw;
+    text-align: center;
+    padding-top: 10vw;
+    font-family: "zainu";
+    
+}
+.footer-bottom{
+    height: 10vh;
+    width: 100%;
+      display: flex;
+     flex-direction: row;
+    justify-content:space-between;
+    align-items: center ; 
+    border-top: 2px solid #2D2822; 
+    
+   
+}
+.footer-bottom .location{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   text-align: center; 
+   justify-content: center;
+   grid-column-gap: 1vw;
+   grid-row-gap: 1vw;
+   height: 2vw;
+   
+   
+   
+}
+
+.footer-bottom .location img{
+    width: 1.3vw;
+    align-items: center;
+    padding-bottom:0.1vw ;
+}
+.footer-bottom .location .area{
+   text-align: center;
+   align-items: center;
+}
+     
+
+.location h6 {
+    font-size: 1vw;
+    /* line-height: 7vw; */
+    letter-spacing: 0.1vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer h6{
+    font-size: 1vw;
+    margin: 0;
+    font-family: "zainu";
+}
+
+
+
+
+.footer-bottom h6 a {
+    text-decoration: none;
+    color: white;
+    font-family: "zainu";
+    
+}
+
+
+
+@media only screen and (max-width:428px) {
+
+    .page1{
+    width: 100vw;
+    height: 120vh;
+    background-color:#EFEAE3;
+    padding: 0vw 3vw;
+    
+    
+}
+
+.nav-icon{
+    font-family: "zainu";
+    font-weight: 200;
+    font-size: 1vw;
+}
+.nav-icon-color{
+    color: #f1512d;
+    font-family: "zainu";
+    font-weight: 300;
+}
+li {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    /* padding: 29px 10px 29px 10px; */
+    color: #07294d;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#active {
+    color: #ff8214;
+    /* padding: 29px 10px; */
+    font-family: "zainu";
+    font-weight: 400;
+}
+
+#acommon {
+    color: #353535;
+    /* padding: 29px 10px; */
+    transition: ease-in-out 0.2s;
+    font-family: "zainu";
+    font-weight: 400;
+
+}
+#acommon:hover{
+    color: #f1512d;
+    
+
+}
+.container{
+    height: 105vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1vw;
+    justify-content: space-around;
+    margin: 5vw 1vw;
+   
+    
+}
+.right{
+   width: 100%;
+   padding: 2vw;
+}
+.upper h3 {
+    font-size: 7vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+
+}
+.upper h1{
+    display: inline-block;
+    font-size: 11vw;
+    font-weight: 200;
+    text-transform: uppercase;
+    color:#FF8214;
+    text-align: left;
+    border-bottom:1px solid rgba(0, 0, 0, 0.723) ;
+    padding-bottom: 6vw;
+
+}
+.right .bottom p{
+    padding-top: 4vw;
+    font-size: 3.5vw;
+
+}
+.left{
+    width: 100%;
+    
+    
+}
+.left img{
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vw;
+    
+   
+}
+.page2{
+    width: 100vw;
+    height: 140vh;
+    background-color:#EFEAE3;
+    padding: 5vw 3vw;
+    
+}
+.form-container{
+    height: 130vh;
+    width: 100%;
+    background-color: black;
+    padding: 6vw 3vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+    
+   
+    
+}
+.form-container .left-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3vw 0vw 3vw 0vw;
+
+    
+}
+
+.left-text-top h2 {
+    color: white;
+    font-size: 9vw;
+    font-family: "zainu";
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 2vw;
+
+}
+.left-text-top h3{
+    color: #FF8214;
+    display: inline-block;
+    font-size: 6vw;
+    font-family: "zainu";
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+
+
+}
+.left-text-bottom{
+    padding-top: 3vw;
+   
+}
+.left-text-bottom h3{
+    padding-top: 2.5vw;
+    font-weight: 100;
+    color: white;
+    font-size: 4.5vw;
+    
+}
+.emails{
+    padding-top: 5vw;
+    color: white;
+    font-weight: 100;
+}
+.emails .first{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 2vw;
+}
+.emails .first .ion{
+    padding-top:6px ;
+}
+
+.emails .first .ion a{
+   
+    color: #FF8214;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    /* font-size: 0.8vw; */
+    line-height: 1vw;
+}
+.emails p{
+    margin: 0;
+    line-height: 0.5vw;
+   
+}
+.ion-icons{
+    /* height: 10vw;     */
+    padding-top: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ion-icons a{
+    color: white;
+    font-size: 6vw;
+    transition: 0.3s ease-in-out;
+}
+.ion-icons a:hover{
+    color:#FF8214 ;
+    
+}
+.form-container .right-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 2vw;
+   
+
+}
+.form-container .right-form form .input{
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom:1px solid #858895;
+    margin: 3vw;
+    padding: 1vw;
+    outline: none;
+   
+
+}
+#options{
+    background-color:black;
+    color:rgba(255, 255, 255, 0.827);
+    font-weight: 100;
+
+    
+}
+.button{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top: 1vw;
+}
+#submit-btn{
+    font-family: "Inter", Sans-serif;
+    padding: 0.7vw 2vw;
+    background-color: white;
+    color: #000;
+
+}
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 0vw 0vw 0vw;
+}
+.back-to-top h3{
+    text-transform: uppercase;
+    font-family: "zainu";
+    font-size: 3.5vw;
+    font-weight: 100;
+    margin: 0;
+    cursor: pointer;
+}
+.page3{
+    width: 100%;
+    height: 97vh;
+}
+.footer{
+    min-height: 30vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        padding: 4vw 4vw;
+        /* z-index: 9; */
+        font-family: "zainu";
+    }
+    
+    .animation-circle{
+        position: relative;
+        z-index: 9;
+    }
+    #shape1{
+        width: 170vw;
+        height: 70vh;
+        background-color: #FE3B0D;
+        /* border-radius: 30%; */
+        position: absolute;
+        left: 0;
+        top: -60vw;
+        bottom: auto;
+        right: auto;
+        animation-name: last-animation;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        z-index: 10;
+        transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(40.1246deg) skew(0deg, 0deg);
+        filter: blur(40px);
+    }
+    #shape2{
+        width: 170vw;
+        height: 70vh;
+        background-color: #FE3B0D;
+        /* border-radius: 30%; */
+        position: absolute;
+        left: 0;
+        top: -60vw;
+        bottom: auto;
+        right: 0;
+        animation-name: last-animation2;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        z-index: 10;
+        transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(40.1246deg) skew(0deg, 0deg);
+        filter: blur(40px);
+    }
+    #shape3{
+        width: 170vw;
+        height: 70vh;
+        background-color: #FE3B0D;
+        /* border-radius: 30%; */
+        position: absolute;
+        left: -30vw;
+        top: -70vw;
+        bottom: auto;
+        right: 0;
+        animation-name: last-animation3;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        z-index: 10;  
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-16.3034deg) skew(0deg, 0deg);
+        
+        filter: blur(40px);
+    }
+    
+    
+    .footer-div{
+        height: 60vh;
+        width: 100%;
+        /* position: absolute; */
+        /* background-color: #FF9831; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vw;
+        align-items: flex-start;
+        padding: 2vw 4vw;
+        z-index: 9;
+        
+    }
+    
+    .footer-div .left h5{
+        font-size: 7vw;
+    }
+    
+    .footer-div .right{
+        display: flex;
+        flex-direction: column;
+        grid-column-gap: 3vw;
+        grid-row-gap: 2vw;
+        padding: 0;
+    
+    
+    }
+    .footer-div .right p{
+        font-size: 5.4vw;
+        padding-right: 5vw;
+        font-weight: 200;
+    }
+    .footer-div .right .inputs{
+        width: 100%;
+        
+        
+    }
+    .footer-div .right .inputs form{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.362);
+    
+    }
+    
+    .footer-div .right .email-input{
+        width: 100%;
+        height: 38px;
+        border: 1px #000;
+        color:rgba(255, 255, 255, 0.362);
+        background-color:transparent;
+        font-family: "zainu", sans-serif;
+        font-size: 3vw;
+        font-weight: 200;
+        border: none;
+        /* border-bottom: 1px solid white; */
+        outline: none;
+        padding: 2vw 0;
+        
+        
+        
+        
+    }
+    .submit-button{
+         width: 4vw;
+         height: 6vw;
+        color:transparent;
+        background-color: transparent;
+        background-image: url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c5_Form%20Button.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;  
+       border: none;
+       padding: 9px 15px;
+       
+       
+       
+    }
+    
+    
+    .footer h1 {
+        width: 100%;
+        font-size: 13.3vw;
+        text-align: center;
+        padding: 20vw 0vw 5vw 0vw;
+        z-index: 9;
+        display: inline-block;
+        
+    }
+    .footer-bottom{
+        height: 10vh;
+        width: 100%;
+          display: flex;
+         flex-direction: row;
+        justify-content:space-between;
+        align-items: center ; 
+        border-top: 2px solid #2D2822; 
+        
+       
+    }
+    .footer-bottom .location{
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       text-align: center; 
+       justify-content: center;
+       grid-column-gap: 1.5vw;
+       grid-row-gap: 1vw;
+       height: 0vw;
+       
+       
+       
+    }
+    
+    .footer-bottom .location img{
+        width: 2.6vw;
+        align-items: center;
+        padding-bottom:0.1vw ;
+    }
+    .footer-bottom .location .area{
+       text-align: center;
+       align-items: center;
+    }
+         
+    
+    .location h6 {
+        font-size: 1vw;
+        /* line-height: 7vw; */
+        letter-spacing: 0.1vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .footer h6{
+        font-size: 2.7vw;
+        margin: 0;
+    }
+    
+    
+    
+    
+    .footer-bottom h6 a {
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+    }
+
